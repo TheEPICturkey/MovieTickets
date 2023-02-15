@@ -11,7 +11,7 @@
   
   <form name="form">
     <label for="movie">Choose a Movie:</label>
-    <select name="movies" id="movies">
+    <select name="movies" id="movies" type="text">
       <option value="brandonBuilding">Brandon's Big Building</option>
       <option value="brandonBob">Brandon Bob</option>
       <option value="billysRevenge">Billy's Revenge</option>
@@ -19,12 +19,21 @@
     </select>
     <br>
     <br>
-    <label for="age">Enter your age:</label>
+    <select name="times" id="times">
+      <option value="10AM">10:00AM</option>
+      <option value="130PM">1:30PM</option>
+      <option value="830PM">8:30PM</option>
+    </select>
+    <br>
+    <br>
+    <label for="age" id="age">Enter your age:</label>
     <input type ="number">
     <input type="button" id="btn" value="Submit"/>
     <br>
 </form>
 
+<div class="results">
+</div>
   <div class="displayWrapper">
     <div class="movieDisplay">
       <h3>Brandon's Big Building</h3>
