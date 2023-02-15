@@ -26,16 +26,16 @@ function priceCalc(age) {
 
 }
 
-window.addEventListener("load", function() {
+window.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("btn");
-  form.addEventListener("submit", handleSubmission, console.log(results))
+  form.addEventListener("click", handleSubmission)
 })
 
 function handleSubmission(event){
   event.preventDefault();
-  const movie = document.getElementById("movies");
-  const movieTitle = movie.options[movie.selectedIndex].text;
-  console.log(movieTitle.value);
+  let movie = document.querySelector("#movies");
+  let movieTitle = movie.options[movie.selectedIndex].text;
+  let age = document.querySelector("input[type='number']").value;
 
 }
 
